@@ -439,7 +439,7 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 
-    border-color: transparent;
+    background-color: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -548,18 +548,23 @@ textarea {
 .form-checkbox {
     display: flex;
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 .form-lable {
     margin-bottom: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    
+        letter-spacing: 0.01em;
 
     color: var(--par-txt-cl);
 }
 
 .form-checkbox-lable {
    display: flex;
-   justify-content: center;
-   align-items: center;
 
    color: var(--par-txt-cl);
 }
