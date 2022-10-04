@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="page">
@@ -54,13 +55,13 @@
     <main>
       <!-- hero -->
       <section class="hero">
-        <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button class="hero-btn" type="button" data-modal-open>замовити послугу</button>
+        <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+        <button class="hero__btn" type="button" data-modal-open>замовити послугу</button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="modal-btn" type="button" data-modal-close>
+            <button class="modal__btn" type="button" data-modal-close>
               <svg
-                class="modal-svg"
+                class="modal__svg"
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -69,7 +70,7 @@
               >
                 <rect width="18" height="18" />
                 <path
-                  class="modal-svg-x"
+                  class="modal__path"
                   d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
                   fill="black"
                 />
@@ -77,35 +78,35 @@
             </button>
 
             <form class="modal-form">
-              <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
-              <div class="form-field">
-                <label class="form-lable" for="name">Ім'я</label>
-                <input class="form-input" type="text" name="name" id="name" />
-                <svg class="modal-form-icon" width="18" height="18">
+              <p class="modal-form__title">Залиште свої дані, ми вам передзвонимо</p>
+              <div class="modal-form__field">
+                <label class="modal-form__lable" for="name">Ім'я</label>
+                <input class="modal-form__input" type="text" name="name" id="name" />
+                <svg class="modal-form__icon" width="18" height="18">
                   <use href="./images/modal-form.svg#person-modal"></use>
                 </svg>
               </div>
 
-              <div class="form-field">
-                <label class="form-lable" for="phone">Телефон</label>
-                <input class="form-input" type="tel" name="phone" id="phone" />
-                <svg class="modal-form-icon" width="18" height="18">
+              <div class="modal-form__field">
+                <label class="modal-form__lable" for="phone">Телефон</label>
+                <input class="modal-form__input" type="tel" name="phone" id="phone" />
+                <svg class="modal-form__icon" width="18" height="18">
                   <use href="./images/modal-form.svg#phone-modal"></use>
                 </svg>
               </div>
 
-              <div class="form-field">
-                <label class="form-lable" for="mail">Пошта</label>
-                <input class="form-input" type="email" name="mail" id="mail" />
-                <svg class="modal-form-icon" width="18" height="18">
+              <div class="modal-form__field">
+                <label class="modal-form__lable" for="mail">Пошта</label>
+                <input class="modal-form__input" type="email" name="mail" id="mail" />
+                <svg class="modal-form__icon" width="18" height="18">
                   <use href="./images/modal-form.svg#email-modal"></use>
                 </svg>
               </div>
 
-              <div class="form-field">
-                <label class="form-lable" for="comment">Коментар</label>
+              <div class="modal-form__field">
+                <label class="modal-form__lable" for="comment">Коментар</label>
                 <textarea
-                  class="form-comment"
+                  class="modal-form__comment"
                   name="comment"
                   id="comment"
                   cols="30"
@@ -114,16 +115,16 @@
                 ></textarea>
               </div>
 
-              <div class="form-checkbox">
-                <label class="form-checkbox-lable" for="checkbox"
+              <div class="modal-form__checkbox">
+                <label class="modal-form__checkbox-lable" for="checkbox"
                   ><input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
-                  <span class="checkbox-icon"></span>
+                  <span class="modal-form__checkbox-icon"></span>
                   Погоджуюся з розсилкою та приймаю
-                  <a class="form-lable-link" href="">Умови договору</a></label
+                  <a class="modal-form__lable-link" href="">Умови договору</a></label
                 >
               </div>
 
-              <button class="form-btn" type="submit">Відправити</button>
+              <button class="modal-form__btn" type="submit">Відправити</button>
             </form>
           </div>
         </div>
@@ -471,14 +472,14 @@
     <footer class="footer">
       <div class="footer__box contaner">
         <div class="footer__box-address">
-          <a class="logo logo-footer" href=""> <span class="logo-txt">Web</span>Studio </a>
+          <a class="logo footer__logo" href=""> <span class="footer__logo-txt">Web</span>Studio </a>
           <address class="address">
             <p class="par-footer"><a class="link" href="">м. Київ, пр-т Лесі Українки, 26</a></p>
-            <ul class="footer-list list">
-              <li class="footer-list-item">
+            <ul class="footer__list list">
+              <li class="footer__list-item">
                 <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="footer-list-item">
+              <li class="footer__list-item">
                 <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
@@ -487,7 +488,7 @@
 
         <div class="footer-box">
           <p class="footer-par">приєднуйтесь</p>
-          <ul class="footer-list__icons list">
+          <ul class="footer__list-icons list">
             <li>
               <a
                 class="footer-link__icons"
